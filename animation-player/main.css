@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.section-name {
+  margin: 10px 10px 10px 25px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+/* Tools styles */
+.tools-section {
+  width: 7%;
+}
+
+.tools-holder {
+  margin-top: 7%;
+  position: absolute;
+}
+
+.tool {
+  height: 35px;
+  width: 35px;
+  margin: 5px 10px 10px;
+}
+
+.tool img {
+width: 35px;
+height: 35px;
+margin: 5px;
+background-size: contain;
+}
+
+.tool:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.color-holder {
+  position: absolute;
+  bottom: 20px;
+  left: 5px;
+  display: grid;
+}
+
+.color-palette {
+  width: 55px;
+  height: 65px;
+}
+
+.color-palette div{
+  float: left;
+  margin: 2px;
+  height: 22px;
+  width: 22px;
+}
+
+.color-palette div:hover {
+  cursor: pointer;
+}
+
+.red {
+  background-color: red;
+}
+
+.aqua {
+  background-color: aqua;
+}
+
+.green {
+  background-color: green;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.color-holder span {
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.current-color {
+  width: 47px;
+  height: 47px;
+  margin-left: 3px;
+}
+
+
+
+
+/* Frames section styles */
+.frames-section {
+  width: 18%;
+  padding-top: 20px;
+}
+
+.frames-holder {
+  width: inherit;
+  padding-top: 15px;
+}
+
+.frame-holder {
+  border: 1px solid darkgray;
+  margin: 10px;
+  width: 128px;
+  height: 128px;
+}
+
+.mini-components {
+  float: left;
+  width: 4px;
+  height: 4px;
+}
+
+.add-frame-btn {
+  width: 100px;
+  height: 30px;
+  margin-left: 25px;
+  outline: none;
+  border: none;
+}
+
+.add-frame-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.add-frame-btn:active {
+  color: white;
+}
+
+.delete-btn {
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  background-image: url("img/delete.png");
+  background-size: contain;
+  position: relative;
+  left: 135px;
+  top: 40px;
+}
+
+.copy-btn {
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  background-image: url("img/copy.png");
+  background-size: contain;
+  position: relative;
+  left: 135px;
+  top: 20px;
+}
+
+.delete-btn:hover,
+.copy-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+
+/* Canvas section styles */
+.canvas-section {
+  width: 55%;
+}
+
+.canvas-holder {
+  margin: 7% auto;
+  width: 480px;
+  height: 480px;
+  border: 1px solid darkgray;
+}
+
+.canvas-component {
+  float: left;
+  width: 15px;
+  height: 15px;
+}
+
+
+
+/* Animation section styles */
+.animation-preview-section {
+  width: 20%;
+}
+
+.animation-section-holder {
+  position: absolute;
+  height: 100%;
+  width: inherit;
+}
+
+.screen {
+  margin-top: 50px;
+}
+
+
+
+/*Modal window*/
+.shortcuts {
+  position: absolute;
+  top: -3px;
+  left: 10px;
+}
+
+.shortcuts img {
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.modal-window {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  width: 30vw;
+  height: 36vh;
+  position: absolute;
+  top: 20vh;
+  left: 35vw;
+  background-color: white;
+}
+
+.modal-container {
+  padding: 30px;
+}
+
+.close-modal {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  transform: scale(1.4);
+}
+
+.close-modal:hover {
+  transform: scale(1.7);
+}

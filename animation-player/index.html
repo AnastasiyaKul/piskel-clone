@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animation-player</title>
+  <link href="main.css" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+
+  <div class="tools-section">
+    <div class="tools-holder" id="tools-holder">
+      <div><img src="img/pencil.png" alt="pencil" class="tool" id="pencil"></div>
+      <div><img src="img/flip.png" alt="flip" class="tool" id="flip"></div>
+      <div><img src="img/rotation.png" alt="rotate" class="tool" id="rotation"></div>
+      <div><img src="img/fill-color.png" alt="paint pixels of a same color" class="tool" id="fill-color"></div>
+      <div><img src="img/erase.png" alt="erase" class="tool" id="erase"></div>
+    </div>
+    <div class="color-holder">
+      <div class="color-palette" id="color-palette">
+        <div id='red' class="red color"></div>
+        <div id='orange' class="orange color"></div>
+        <div id='blue' class="blue color"></div>
+        <div id='green' class="green color"></div>
+        <div id='aqua' class="aqua color"></div>
+        <div id='pink' class="pink color"></div>
+      </div>
+        <span id="current-color" class="current-color"></span>
+    </div>
+  </div>
+
+  <div class="frames-section">
+    <span class="section-name">Frames:</span>
+    <div class="frames-holder" id="frames-holder"></div>
+    <div class="frames-button">
+      <button class="add-frame-btn" id="add-frame-btn">Add frame</button>
+    </div>
+  </div>
+
+  <div class="canvas-section">
+    <div class="canvas-holder" id="canvas-holder"></div>
+  </div>
+
+  <div class="animation-preview-section">
+    <div class="animation-section-holder">
+      <div class="screen" id="screen"></div>
+    </div>
+  </div>
+</div>
+
+<div class="shortcuts">
+  <img src="img/keyboard.png" id="shortcuts" onclick="document.getElementById('shortcut-desc').style.display='block'">
+</div>
+
+<div id="shortcut-desc" class="modal-window">
+  <div class="modal-content">
+    <div class="modal-container">
+      <span onclick="document.getElementById('shortcut-desc').style.display='none'" class="close-modal">&times;</span>
+      <p><b>P</b> - pencil</p>
+      <p><b>E</b> - Erase</p>
+      <p><b>F</b> - Fill color (all pixels of a same color)</p>
+      <p><b>K</b> - open this window</p>
+    </div>
+  </div>
+</div>
+
+<script src= "../dist/bundle.js"></script>
+</body>
+</html>
